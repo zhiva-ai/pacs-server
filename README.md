@@ -19,7 +19,7 @@ git clone https://github.com/medvision-io/pacs-server.git
 or download it directly from 
 [zhiva.ai PACS server](https://github.com/medvision-io/pacs-server/archive/refs/heads/main.zip).
 
-### Generate local TSL certificate
+### Generate local TSL certificate (only once every 365 days)
 
 > Notice
 > 
@@ -60,7 +60,7 @@ At this point you should have 2 `.crt` files and 1 `.key` file. Check this by ca
 
 from your main directory. It should return following result `trusted.crt  zhiva.crt  zhiva.key`.
 
-If one of those files is missing go back to [Generate local TSL certificate](#generate-local-tsl-certificate) section and make sure you have all of them.
+If one of those files is missing go back to [Generate local TSL certificate](#generate-local-tsl-certificate-only-once-every-365-days) section and make sure you have all of them.
 
 #### Build the server
 
