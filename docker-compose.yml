@@ -3,7 +3,7 @@ services:
   nginx:
     image: nginx:latest
     container_name: production_nginx
-    restart: always
+    restart: unless-stopped
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
       - ./zhiva.crt:/etc/nginx/cert/cert.crt
