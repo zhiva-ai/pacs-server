@@ -14,7 +14,7 @@ services:
     networks:
       - pacs-network
   orthanc:
-    image: jodogne/orthanc-plugins:1.9.7
+    image: jodogne/orthanc-plugins:1.10.0
     container_name: pacs_server
     command: /run/secrets/  # Path to the configuration files (stored as secrets)
 #    ports:
