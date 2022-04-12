@@ -88,7 +88,7 @@
     "StudiesMetadata": "Full",
     "SeriesMetadata": "Full",
     "Servers" : {
-      "zhiva" : [ "http://localhost:8042/pacs/" ]
+      "zhiva" : [ "http://localhost:8042/pacs/", "zhiva", "3$yc$XYQhSA55bJf" ]
     }
   },
 
