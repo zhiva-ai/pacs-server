@@ -11,7 +11,7 @@
 
   "MaximumPatientCount": 0,
 
-  "LuaScripts": [],
+  "LuaScripts": ["/etc/orthanc/lua/IncomingHttpRequestFilter.lua"],
 
   "Plugins": ["/usr/share/orthanc/plugins", "/usr/local/share/orthanc/plugins"],
 
@@ -27,7 +27,7 @@
 
   "HttpCompressionEnabled": true,
 
-  "WebDavEnabled": true,
+  "WebDavEnabled": false,
 
   "WebDavDeleteAllowed": false,
 
@@ -72,8 +72,10 @@
 
   "SslTrustedClientCertificates": "trustedClientCertificates.pem",
 
-  "AuthenticationEnabled": false,
+  "AuthenticationEnabled": true,
   "RegisteredUsers": {
+    "zhiva-admin": "Gf3hDbjY6HkdDsRh",
+    "zhiva-editor": "oAm5Ns78DsdE6MNy",
     "zhiva": "3$yc$XYQhSA55bJf"
   },
 
@@ -88,7 +90,7 @@
     "StudiesMetadata": "Full",
     "SeriesMetadata": "Full",
     "Servers" : {
-      "zhiva" : [ "http://localhost:8042/pacs/", "zhiva", "3$yc$XYQhSA55bJf" ]
+      "zhiva" : [ "http://localhost:8042/pacs/", "zhiva-admin", "Gf3hDbjY6HkdDsRh" ]
     }
   },
 
@@ -194,7 +196,7 @@
 
   "SaveJobs": true,
 
-  "OverwriteInstances": false,
+  "OverwriteInstances": true,
 
   "MediaArchiveSize": 1,
 

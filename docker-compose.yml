@@ -14,7 +14,7 @@ services:
     networks:
       - pacs-network
   orthanc:
-    image: jodogne/orthanc-plugins:1.10.0
+    image: jodogne/orthanc-plugins:1.11.0
     container_name: pacs_server
     command: /run/secrets/  # Path to the configuration files (stored as secrets)
 #    ports:
@@ -29,6 +29,7 @@ services:
       - ./zhiva.crt:/etc/orthanc/orthanc.crt
       - ./zhiva.key:/etc/orthanc/orthanc.key
       - ./trusted.crt:/etc/orthanc/trusted.crt
+      - ./scripts/IncomingHttpRequestFilter.lua:/etc/orthanc/lua/IncomingHttpRequestFilter.lua
     networks:
       - pacs-network
 secrets:
