@@ -39,3 +39,4 @@ volumes:
   orthanc-db:
 networks:
   pacs-network:
+    name: pacs-shared-network
